@@ -1,0 +1,35 @@
+﻿#maindiv {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+hr {
+	border: medium solid #000000;
+}
+.itemdiv {
+	margin: 10px;
+	padding: 10px;
+	width: 380px;
+	height: 270px;
+	box-shadow: 0px 0px 3px #808080;
+	float: left;
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 20px;
+	color: #808080;
+	margin-bottom: 0px;
+	text-align: center;
+}
+body {
+	font-family: メイリオ;
+}
+.itemdetaildiv {
+	padding: 20px;
+	width: 800px;
+	box-shadow: 0px 0px 2px #808080;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}

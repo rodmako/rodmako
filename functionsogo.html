@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>フランクフランク　｜　雑貨屋</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	.itemdiv img {
+		margin-bottom: 10px;
+	}
+	p {
+		margin: 0px;
+	}
+	h2 {
+		margin: 0px;
+		font-size: medium;
+		font-weight: bold;
+	}
+	h3 {
+		font-size: small;
+		text-align: center;
+	}
+	</style>
+	<script type="text/javascript">
+	//ここに関数を作成してください
+		const setImage = function setImage(tagid,imgname,imgwidth){
+			var imgtag = document.getElementById(tagid);
+			imgtag.src = "img/"+imgname;
+			imgtag.width = imgwidth;
+		};
+			
+		const setInText = function setInText(tagid,message){
+			var tag = document.getElementById(tagid);
+			tag.innerHTML = message;
+		};
+						
+	</script>
+</head>
+
+<body>
+<div id="maindiv">
+	<img alt="Frankfrank" height="28" src="img/logo.png" width="200"><br><hr>
+	<br>
+	<img alt="Pick up items" height="249" src="img/topimage.png" width="800"><br>
+	<h1>新着アイテムのご紹介</h1>
+	<div class="itemdiv">
+		<img id="item1img" src="img/noimage.png">
+		<h2 id="item1h2">XXXXX</h2>
+		<p id="item1p">XXXX</p>
+	</div>
+	<div class="itemdiv">
+		<img id="item2img" src="img/noimage.png">
+		<h2 id="item2h2">XXXXX</h2>
+		<p id="item2p">XXXXX</p>
+	</div>
+	<div class="itemdiv">
+		<img id="item3img" src="img/noimage.png">
+		<h2 id="item3h2">XXXXX</h2>
+		<p id="item3p">XXXXX</p>
+	</div>
+	<div class="itemdiv">
+		<img id="item4img" src="img/noimage.png">
+		<h2 id="item4h2">XXXXX</h2>
+		<p id="item4p">XXXXX</p>
+	</div>
+	<hr>
+	<h3>COPYRIGHT(C) 2021 BY ASOJUKU.</h3>
+	
+	
+	<script type="text/javascript">
+		//この中で関数を呼び出してください
+		setImage("item1img","item1.jpg",360);
+		setInText("item1h2","【花粉対策】ラチェレ バスタオル グレー");
+		setInText("item1p","DR.C医薬独自の新機能「ハイドロ銀チタンRテクノロジー」を搭載したバスタオルです。");
+		
+		setImage("item2img","item2.jpg",360);
+		setInText("item2h2","アマーレ トゥースブラシホルダー キャット 3");
+		setInText("item2p","ファニーでキュートなトゥースブラシスタンドシリーズに新デザインが登場。");
+
+		
+		setImage("item3img","item3.jpg",360);
+		setInText("item3h2","【シナモン&ミルクティー】ディフューザー");
+		setInText("item3p","ドライフルーツ&フラワーを閉じ込めた、目にも楽しいフレグランスディフューザーです。");
+		
+		setImage("item4img","item4.jpg",360);
+		setInText("item4h2","サリー ミニケース ダイヤ");
+		setInText("item4p","天然のアフリカンホーン（角部分）を使用した独特の色味のフォトフレームです。");
+
+
+	</script>
+</div>
+</body>
+
+</html>
